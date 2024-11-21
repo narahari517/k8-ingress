@@ -16,17 +16,17 @@ spec:
   # this is pod definition
   template:
     metadata:
-      # these labels belong to pods
+      # these labels belongs to pod
       labels:
         name: app1
         tier: frontend
     spec:
       containers:
       - name: app1
-        image: narahari517/app1:v1
+        image: narahari/app1:v1
 ---
-apiVersion: v1
 kind: Service
+apiVersion: v1
 metadata:
   name: app1
 spec:
